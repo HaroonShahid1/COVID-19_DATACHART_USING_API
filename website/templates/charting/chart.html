@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19 Data Chart</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    {% if chart_div %}
+        {{ chart_div | safe }}
+    {% else %}
+        <p>Error fetching COVID-19 data from the API.</p>
+    {% endif %}
+</body>
+</html>
