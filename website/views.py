@@ -4,7 +4,7 @@ import plotly.express as px
 import pandas as pd
 
 def fetch_covid_data_and_display_chart(request):
-    api_url = 'https://disease.sh/v3/covid-19/countries'  # COVID-19 data API endpoint
+    api_url = ''  # COVID-19 data API endpoint
     response = requests.get(api_url)
 
     if response.status_code == 200:
